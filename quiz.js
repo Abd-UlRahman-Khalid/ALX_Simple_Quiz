@@ -12,7 +12,7 @@ function checkAnswer() {
   document.querySelector('[name="quiz"]');
   let userAnswer = document.querySelector('[name="quiz"]:checked').value;
   document.querySelector('[name="quiz"]').checked;
-  if (userAnswer == correctAnswer) {
+  if (userAnswer === correctAnswer) {
     document.getElementById("feedback").innerHTML = "Correct! Well done.";
   } else {
     document.getElementById("feedback").innerHTML =
